@@ -5,16 +5,16 @@
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 //
 
-#ifndef DEPENDENCY_TEST_STATIC_LIB_X_H
-#define DEPENDENCY_TEST_STATIC_LIB_X_H
+#ifndef DEPENDENCY_TEST_APP_H
+#define DEPENDENCY_TEST_APP_H
 
 namespace dependency_test {
-namespace lib_x {
+namespace app {
 
 void foo();
 void bar();
 
-} // namespace lib_x
+} // namespace app
 } // namespace dependency_test
 
-#endif // DEPENDENCY_TEST_STATIC_LIB_X_H
+#endif // DEPENDENCY_TEST_APP_H

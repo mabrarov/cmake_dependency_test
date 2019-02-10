@@ -20,14 +20,7 @@
 #include <static_lib_x.h>
 #include <static_lib_y.h>
 
-namespace {
-
-void foo()
-{
-  std::cout << "app foo" << std::endl;
-}
-
-} // anonymous namespace
+#include "foo_bar.h"
 
 #if defined(WIN32)
 int _tmain(int /*argc*/, _TCHAR* /*argv*/[])
@@ -37,7 +30,8 @@ int main(int /*argc*/, char* /*argv*/[])
 {
   try
   {
-    foo();
+    dependency_test::app::foo();
+    dependency_test::app::bar();
     dependency_test::lib_a::foo();
     dependency_test::lib_b::foo();
     dependency_test::lib_c::foo();
