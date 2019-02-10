@@ -1,15 +1,11 @@
 cmake_minimum_required(VERSION 3.0)
 project(app)
 
-set(project_base_dir "${PROJECT_SOURCE_DIR}")
-set(cxx_headers_dir  "${project_base_dir}/include")
-set(cxx_sources_dir  "${project_base_dir}/src")
-
-set(cxx_sources
-    "${cxx_sources_dir}/main.cpp")
-
 add_executable(${PROJECT_NAME}
-    ${cxx_sources})
+    "src/main.cpp")
+target_include_directories(${PROJECT_NAME}
+    PUBLIC
+    "include")
 target_link_libraries(${PROJECT_NAME}
     static_lib_a
     static_lib_b
