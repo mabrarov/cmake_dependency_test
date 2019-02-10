@@ -1,7 +1,7 @@
 //
-// Copyright (c) 2016 Marat Abrarov (abrarov@gmail.com)
+// Copyright (c) 2019 Marat Abrarov (abrarov@gmail.com)
 //
-// Distributed under the MIT License. (See accompanying LICENSE)
+// Distributed under the MIT License (see accompanying LICENSE)
 //
 
 #ifndef DEPENDENCY_TEST_STATIC_LIB_X_H
