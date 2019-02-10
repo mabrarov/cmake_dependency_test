@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.0)
+project(cmake_dependency_test)
+
+add_subdirectory(app)
+add_subdirectory(static_lib_a)
+add_subdirectory(static_lib_b)
+add_subdirectory(static_lib_c)
+add_subdirectory(static_lib_x)
+add_subdirectory(static_lib_y)
+add_subdirectory(lib_xa)
+add_subdirectory(lib_ya)
